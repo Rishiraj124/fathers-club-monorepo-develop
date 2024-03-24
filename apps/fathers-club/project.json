@@ -16,7 +16,7 @@
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/app"
+          "outputPath": "apps/fathers-club"
         },
         "production": {}
       }
