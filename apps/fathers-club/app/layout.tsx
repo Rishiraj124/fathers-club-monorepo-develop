@@ -1,4 +1,4 @@
-import './global.css';
+import '../styles/index.scss';
 
 export const metadata = {
   title: 'Welcome to fathers-club',
