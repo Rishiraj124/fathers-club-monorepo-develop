@@ -5,5 +5,21 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project fathers-club --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/fathers-club",
+        "outputPath": "dist/apps/fathers-club"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/app"
+        },
+        "production": {}
+      }
+    }
+  }
 }
