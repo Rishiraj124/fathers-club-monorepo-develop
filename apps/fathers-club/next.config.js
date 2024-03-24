@@ -13,10 +13,21 @@ const nextConfig = {
     svgr: false,
   },
 };
-
+const withPWA = require('@ducanh2912/next-pwa').default({
+  dest: 'public', //creates service workers in the destination
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
+  reloadOnOnline: true,
+  //  swcMinify: true,
+  disable: false, // means dont disable the PWA on any environment
+  workboxOptions: {
+    disableDevLogs: true,
+  },
+});
 const plugins = [
   // Add more Next.js plugins to this list if needed.
   withNx,
+  withPWA,
 ];
 
 module.exports = composePlugins(...plugins)(nextConfig);
