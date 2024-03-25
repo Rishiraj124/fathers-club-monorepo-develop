@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@components/ui": ["shared-components/src/index.ts"],
+      "@components/ui/server": ["shared-components/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

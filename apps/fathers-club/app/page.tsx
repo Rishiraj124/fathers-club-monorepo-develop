@@ -1,3 +1,4 @@
+import { Button } from '@components/ui';
 export default function Index() {
   /*
    * Replace the elements below with your own.
@@ -18,6 +19,7 @@ export default function Index() {
           <a href="#">Data</a>
         </li>
       </ol>
+      <Button>Button</Button>
     </div>
   );
 }
